@@ -16,6 +16,6 @@ public final class ToereBeregner implements KastBeregner {
                 terning.erLik(Oyne.TO) ? 
                 Poeng.TO : Poeng.NULL);
         }
-        return new Integer(sum.verdi());
+        return sum.verdi();
     }
 }
