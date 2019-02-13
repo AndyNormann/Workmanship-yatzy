@@ -2,7 +2,7 @@ package no.mesan.workmanship.yatzy.beregning;
 
 import no.mesan.workmanship.yatzy.domene.*;
 
-public class SekserBeregner implements KastBeregner{
+public final class SekserBeregner implements KastBeregner{
 
     @Override
     public final Integer beregnPoengForKast(final Kast kast) {
