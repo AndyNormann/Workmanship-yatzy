@@ -1,16 +1,16 @@
 package no.mesan.workmanship.yatzy.domene;
 
-import no.mesan.workmanship.yatzy.beregning.enkeltberegner.EnereBeregner;
+import no.mesan.workmanship.yatzy.beregning.enkeltberegner.*;
 import no.mesan.workmanship.yatzy.beregning.KastBeregner;
 import no.mesan.workmanship.yatzy.beregning.ManglerBeregner;
 
 public enum Yatzykombinasjon implements KastBeregner {
-    ENERE("Enere", new EnereBeregner()),
-    TOERE("Toere", null),
-    TREERE("Treere", null),
-    FIRERE("Firere", null),
-    FEMMERE("Femmere", null),
-    SEKSERE("Seksere", null),
+    ENERE("Enere", new EnkeltBeregner(Oyne.EN, Poeng.EN)),
+    TOERE("Toere", new EnkeltBeregner(Oyne.TO, Poeng.TO)),
+    TREERE("Treere", new EnkeltBeregner(Oyne.TRE, Poeng.TRE)),
+    FIRERE("Firere", new EnkeltBeregner(Oyne.FIRE, Poeng.FIRE)),
+    FEMMERE("Femmere", new EnkeltBeregner(Oyne.FEM, Poeng.FEM)),
+    SEKSERE("Seksere", new EnkeltBeregner(Oyne.SEKS, Poeng.SEKS)),
     ETT_PAR("Ett par", null),
     TO_PAR("To par", null),
     TRE_LIKE("Tre like", null),

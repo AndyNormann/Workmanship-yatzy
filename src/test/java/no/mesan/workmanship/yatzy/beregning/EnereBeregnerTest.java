@@ -1,7 +1,9 @@
 package no.mesan.workmanship.yatzy.beregning;
 
-import no.mesan.workmanship.yatzy.beregning.enkeltberegner.EnereBeregner;
+import no.mesan.workmanship.yatzy.beregning.enkeltberegner.EnkeltBeregner;
 import no.mesan.workmanship.yatzy.domene.Kast;
+import no.mesan.workmanship.yatzy.domene.Oyne;
+import no.mesan.workmanship.yatzy.domene.Poeng;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -9,7 +11,7 @@ import static org.junit.Assert.*;
 public class EnereBeregnerTest {
     @Test
     public void beregnPoengForKast_medIngenEnere_skalGiNullPoeng() {
-        final EnereBeregner beregner = new EnereBeregner();
+        final EnkeltBeregner beregner = new EnkeltBeregner(Oyne.EN, Poeng.EN);
         final Kast kastUtenEnere = new Kast(2, 3, 5, 6, 4);
 
         final int poeng = beregner.beregnPoengForKast(kastUtenEnere);
@@ -19,7 +21,7 @@ public class EnereBeregnerTest {
 
     @Test
     public void beregnPoengForKast_medEnEnere_skalGiEtPoeng() {
-        final EnereBeregner beregner = new EnereBeregner();
+        final EnkeltBeregner beregner = new EnkeltBeregner(Oyne.EN, Poeng.EN);
         final Kast kastUtenEnere = new Kast(2, 1, 5, 6, 4);
 
         final int poeng = beregner.beregnPoengForKast(kastUtenEnere);
@@ -29,7 +31,7 @@ public class EnereBeregnerTest {
 
     @Test
     public void beregnPoengForKast_medBareEnere_skalGiSeksPoeng() {
-        final EnereBeregner beregner = new EnereBeregner();
+        final EnkeltBeregner beregner = new EnkeltBeregner(Oyne.EN, Poeng.EN);
         final Kast kastUtenEnere = new Kast(1, 1, 1, 1, 1);
 
         final int poeng = beregner.beregnPoengForKast(kastUtenEnere);
