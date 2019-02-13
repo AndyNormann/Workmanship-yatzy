@@ -1,5 +1,6 @@
 package no.mesan.workmanship.yatzy.beregning;
 
+import no.mesan.workmanship.yatzy.beregning.enkeltberegner.ToerBeregner;
 import no.mesan.workmanship.yatzy.domene.Kast;
 import org.junit.Test;
 

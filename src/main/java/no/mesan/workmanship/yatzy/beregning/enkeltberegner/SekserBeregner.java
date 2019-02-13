@@ -1,8 +1,9 @@
-package no.mesan.workmanship.yatzy.beregning;
+package no.mesan.workmanship.yatzy.beregning.enkeltberegner;
 
+import no.mesan.workmanship.yatzy.beregning.KastBeregner;
 import no.mesan.workmanship.yatzy.domene.*;
 
-public final class SekserBeregner implements KastBeregner{
+public final class SekserBeregner implements KastBeregner {
 
     @Override
     public final Integer beregnPoengForKast(final Kast kast) {

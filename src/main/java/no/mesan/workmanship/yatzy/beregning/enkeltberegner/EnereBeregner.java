@@ -1,5 +1,6 @@
-package no.mesan.workmanship.yatzy.beregning;
+package no.mesan.workmanship.yatzy.beregning.enkeltberegner;
 
+import no.mesan.workmanship.yatzy.beregning.KastBeregner;
 import no.mesan.workmanship.yatzy.domene.*;
 
 public final class EnereBeregner implements KastBeregner {

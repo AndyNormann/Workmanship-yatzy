@@ -1,5 +1,6 @@
 package no.mesan.workmanship.yatzy.beregning;
 
+import no.mesan.workmanship.yatzy.beregning.enkeltberegner.FemmerBeregner;
 import no.mesan.workmanship.yatzy.domene.Kast;
 import org.junit.Test;
 
