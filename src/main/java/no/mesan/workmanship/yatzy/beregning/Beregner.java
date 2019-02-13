@@ -1,6 +1,7 @@
 package no.mesan.workmanship.yatzy.beregning;
 
 import no.mesan.workmanship.yatzy.domene.Kast;
+import no.mesan.workmanship.yatzy.domene.Sum;
 import no.mesan.workmanship.yatzy.domene.Yatzykombinasjon;
 
 public class Beregner implements YatzyBeregner {

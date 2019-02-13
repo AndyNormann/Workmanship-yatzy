@@ -2,13 +2,13 @@ package no.mesan.workmanship.yatzy.beregning;
 
 import no.mesan.workmanship.yatzy.domene.*;
 
-public final class EnereBeregner implements KastBeregner {
+public class ToerBeregner implements KastBeregner{
 
     @Override
     public final Integer beregnPoengForKast(final Kast kast) {
         Sum sum = new Sum();
         for (Terning terning : kast) {
-            sum = sum.leggTil(terning.erLik(Oyne.EN) ? Poeng.EN : Poeng.NULL);
+            sum = sum.leggTil(terning.erLik(Oyne.TO) ? Poeng.TO : Poeng.NULL);
         }
 
         return sum.verdi();

@@ -1,7 +1,7 @@
 package no.mesan.workmanship.yatzy.beregning;
 
 import no.mesan.workmanship.yatzy.domene.Kast;
-import no.mesan.workmanship.yatzy.domene.Poeng;
+import no.mesan.workmanship.yatzy.domene.Sum;
 
 public class ManglerBeregner implements KastBeregner {
 
@@ -14,6 +14,6 @@ public class ManglerBeregner implements KastBeregner {
     @Override
     public Integer beregnPoengForKast(Kast kast) {
         System.out.println(hva);
-        return Poeng.NULL.verdi();
+        return 0;
     }
 }

@@ -8,11 +8,11 @@ public class Terning {
         this.verdi = verdi;
     }
 
-    public boolean erLik(final Oyne oye) {
-        return oye.verdi() == this.verdi;
+    Integer asInt() {
+        return this.verdi;
     }
 
-    public Integer asInt() {
-        return this.verdi;
+    public Boolean erLik(final Oyne oyne) {
+        return this.verdi.equals(oyne.verdi());
     }
 }

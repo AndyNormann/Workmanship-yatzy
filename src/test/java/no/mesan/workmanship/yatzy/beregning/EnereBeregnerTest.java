@@ -15,22 +15,25 @@ public class EnereBeregnerTest {
 
         assertEquals(0, poeng);
     }
-    @Test
-    public void beregnPoengForKast_medEnEner_skalGiEtPoeng() {
-        final EnereBeregner beregner = new EnereBeregner();
-        final Kast kastMedEnEner = new Kast(1, 3, 2, 6, 5);
 
-        final int poeng = beregner.beregnPoengForKast(kastMedEnEner);
+    @Test
+    public void beregnPoengForKast_medEnEnere_skalGiEtPoeng() {
+        final EnereBeregner beregner = new EnereBeregner();
+        final Kast kastUtenEnere = new Kast(2, 1, 5, 6, 4);
+
+        final int poeng = beregner.beregnPoengForKast(kastUtenEnere);
 
         assertEquals(1, poeng);
     }
-    @Test
-    public void beregnPoengForKast_medFemEnere_skalGiEtPoeng() {
-        final EnereBeregner beregner = new EnereBeregner();
-        final Kast kastMedFemEner = new Kast(1, 1, 1, 1, 1);
 
-        final int poeng = beregner.beregnPoengForKast(kastMedFemEner);
+    @Test
+    public void beregnPoengForKast_medBareEnere_skalGiSeksPoeng() {
+        final EnereBeregner beregner = new EnereBeregner();
+        final Kast kastUtenEnere = new Kast(1, 1, 1, 1, 1);
+
+        final int poeng = beregner.beregnPoengForKast(kastUtenEnere);
 
         assertEquals(5, poeng);
     }
+
 }
